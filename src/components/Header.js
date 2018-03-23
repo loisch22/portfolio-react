@@ -11,7 +11,6 @@ export const Header = ({ startLogout }) => {
         <Link className="header__title" to="/dashboard">
           <h1>Lois Choi</h1>
         </Link>
-      
         <Link className="header__title" to="/about">
           <p>About</p>
         </Link>

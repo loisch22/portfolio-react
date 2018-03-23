@@ -1,15 +1,18 @@
-import * as firebase from 'firebase';
+import * as firebase from 'firebase'; // imports all exports from firebase
 
 const config = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  databaseURL: process.env.FIREBASE_DATABASE_URL,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
+  apiKey: "AIzaSyADA-yX3JQq3HbWNAjRvMYqeWMiyFZ2yvY",
+  authDomain: "portfolio-69306.firebaseapp.com",
+  databaseURL: "https://portfolio-69306.firebaseio.com",
+  projectId: "portfolio-69306",
+  storageBucket: "portfolio-69306.appspot.com",
+  messagingSenderId: "12081265279"
 };
 
-firebase.initializeApp(config);
+firebase.initializeApp(config); // initialize config object
+
+// firebase.database().ref(`about/content`).push("Hello");
+// firebase.database().ref(`about/content`).set("goodbye");
 
 const database = firebase.database();
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
